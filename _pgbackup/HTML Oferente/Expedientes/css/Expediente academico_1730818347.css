@@ -29,10 +29,22 @@
 
 .popup-box {
     background: #fff;
-    padding: 20px;
+    padding: 24px;
     border-radius: 12px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-    width: 360px;
+    width: 320px;
+    text-align: center;
+    opacity: 0;
+    transform: scale(0.8);
+    animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.popup-box2 {
+    background: #fff;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    width: 50%;
     text-align: center;
     opacity: 0;
     transform: scale(0.8);
@@ -68,9 +80,11 @@
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
+    width: 50%;
 }
 
 .btn-submit {
+    margin-top: 12px;
     background-color: green;
     color: #fff;
 }
@@ -106,14 +120,4 @@
 .overlay-container.show {
     display: flex;
     opacity: 1;
-}
-
-@layer utilities {
-    @media (max-width: 1280px) and (max-height: 720px) {
-        .text-sm-1280 {
-            font-size: 0.875rem;
-
-            /* Ejemplo de ajuste para 1280x720 */
-        }
-    }
 }

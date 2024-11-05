@@ -1,16 +1,16 @@
 //titulo
 function togglePopupt() {
-  const overlay = document.getElementById("popupOverlayt");
-  overlay.classList.toggle("show");
+  const overlayt = document.getElementById("popupOverlayt");
+  overlayt.classList.toggle("show");
 
-  if (overlay.classList.contains("show")) {
-    const btnSubmit = document.getElementById("btn-submitt");
-    btnSubmit.addEventListener("click", handleButtonClickt);
+  if (overlayt.classList.contains("show")) {
+    const btnSubmitt = document.getElementById("btn-submitt");
+    btnSubmitt.addEventListener("click", handleButtonClickt);
   }
 }
 
-function handleButtonClickt(event) {
-  event.preventDefault();
+function handleButtonClickt(eventt) {
+  eventt.preventDefault();
   togglePopupt();
   const checkbox = document.getElementById("check_titulo");
   checkbox.checked = true;
@@ -22,31 +22,31 @@ function handleButtonClickt(event) {
 var ti = document.getElementById("btn-closet");
 ti &&
   ti.addEventListener("click", function () {
-    const btnSubmit = document.getElementById("btn-submitt");
-    btnSubmit.removeEventListener("click", handleButtonClickt);
+    const btnSubmitt = document.getElementById("btn-submitt");
+    btnSubmitt.removeEventListener("click", handleButtonClickt);
   });
 
 //mostrar
 function togglePopuptm() {
-  const overlay = document.getElementById("popupOverlaytm");
-  overlay.classList.toggle("show");
+  const overlaytm = document.getElementById("popupOverlaytm");
+  overlaytm.classList.toggle("show");
 
-  if (overlay.classList.contains("show")) {
-    const btnSubmit = document.getElementById("btn-submittm");
-    btnSubmit.addEventListener("click", handleButtonClicktm);
+  if (overlaytm.classList.contains("show")) {
+    const btnSubmittm = document.getElementById("btn-submittm");
+    btnSubmittm.addEventListener("click", handleButtonClicktm);
   }
 }
 
-function handleButtonClicktm(event) {
-  event.preventDefault();
+function handleButtonClicktm(eventtm) {
+  eventtm.preventDefault();
   togglePopuptm();
 }
 
 var tim = document.getElementById("btn-closetm");
 tim &&
   tim.addEventListener("click", function () {
-    const btnSubmit = document.getElementById("btn-submittm");
-    btnSubmit.removeEventListener("click", handleButtonClicktm);
+    const btnSubmittm = document.getElementById("btn-submittm");
+    btnSubmittm.removeEventListener("click", handleButtonClicktm);
   });
 
 //institucion
@@ -76,16 +76,16 @@ ins &&
 
 //agregar titulo
 function togglePopupaddtittle() {
-  const overlay = document.getElementById("popupOverlayaddtittle");
+  const overlay = document.getElementById("popupOverlayaddtitle");
   overlay.classList.toggle("show");
 
   if (overlay.classList.contains("show")) {
     const btnSubmit = document.getElementById("btn-submitaddtittle");
-    btnSubmit.addEventListener("click", handleButtonClickaddtittle);
+    btnSubmit.addEventListener("click", handleButtonClickaddtitle);
   }
 }
 
-function handleButtonClickaddtittle(event) {
+function handleButtonClickaddtitle(event) {
   event.preventDefault();
   togglePopupaddtittle();
 }

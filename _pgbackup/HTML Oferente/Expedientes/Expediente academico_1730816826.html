@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.0.2/dist/tailwind.min.css">
         <meta name="description" content="Expediente académico">
     </head>
-    <body>
+    <body class="font-light text-gray-700">
         <!-- Header -->
         <div class="flex h-27 justify-end">
             <div class="w-48 h-14 mx-3 my-3">
@@ -69,7 +69,7 @@
                         </div>
                         <div class="p-1">
                             <div id="popupOverlayaddtittle" class="overlay-container">
-                                <div class="popup-box2 md:w-full md:mx-5 rounded-lg border-2 border-solid border-gray-300 mb-1 px-5 py-2 bg-green-200">
+                                <div class="popup-box2 rounded-lg border-2 border-solid border-gray-300 mb-1 px-5 py-2 bg-green-200">
                                     <h2 class="text-3xl font-medium text-black mb-5 text-left">
                         Agregar </h2>
                                     <form>
@@ -84,7 +84,7 @@
 </button>
                                                         <div id="popupOverlay" class="overlay-container">
                                                             <div class="popup-box">
-                                                                <h2 style="color:green">Institución</h2>
+                                                                <h2 style="color: green">Institución</h2>
                                                                 <form class="form-container" id="form_institucion">
                                                                     <label class="form-label text-black font-bold">Provincia:</label>
                                                                     <div class="flex w-full px-5 mb-4 md:mb-0">
@@ -321,7 +321,8 @@
                                         <button type="button" id="btn-submitaddtitle" class="btn-open-popup bg-blue-700 text-white py-1 font-medium rounded-md hover:bg-blue-500">
                                             Guardar
 </button>                                         
-                                        <button type="button" onclick="togglePopupaddtittle()" class="btn-open-popup bg-blue-700 text-white py-1 font-medium rounded-md hover:bg-blue-500">
+
+                                        <button type="button" onclick="togglePopupaddtitle()" class="btn-open-popup bg-blue-700 text-white py-1 font-medium rounded-md hover:bg-blue-500">
                                             Atras
 </button>
                                     </div>
@@ -477,7 +478,7 @@
                 </div>
             </div>
         </section>
-        <script src="../../pgia/lib/pgia.js"></script>
+        <script src="pgia/lib/pgia.js"></script>
         <script src="../../js/Expediente%20academico.js"></script>
     </body>
 </html>

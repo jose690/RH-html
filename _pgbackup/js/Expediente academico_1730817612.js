@@ -28,25 +28,25 @@ ti &&
 
 //mostrar
 function togglePopuptm() {
-  const overlay = document.getElementById("popupOverlaytm");
-  overlay.classList.toggle("show");
+  const overlaytm = document.getElementById("popupOverlaytm");
+  overlaytm.classList.toggle("show");
 
-  if (overlay.classList.contains("show")) {
-    const btnSubmit = document.getElementById("btn-submittm");
-    btnSubmit.addEventListener("click", handleButtonClicktm);
+  if (overlaytm.classList.contains("show")) {
+    const btnSubmittm = document.getElementById("btn-submittm");
+    btnSubmittm.addEventListener("click", handleButtonClicktm);
   }
 }
 
-function handleButtonClicktm(event) {
-  event.preventDefault();
+function handleButtonClicktm(eventtm) {
+  eventtm.preventDefault();
   togglePopuptm();
 }
 
 var tim = document.getElementById("btn-closetm");
 tim &&
   tim.addEventListener("click", function () {
-    const btnSubmit = document.getElementById("btn-submittm");
-    btnSubmit.removeEventListener("click", handleButtonClicktm);
+    const btnSubmittm = document.getElementById("btn-submittm");
+    btnSubmittm.removeEventListener("click", handleButtonClicktm);
   });
 
 //institucion
