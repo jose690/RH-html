@@ -74,25 +74,27 @@ ins &&
     btnSubmit.removeEventListener("click", handleButtonClick);
   });
 
-//agregar titulo
-function togglePopupaddtittle() {
-  const overlay = document.getElementById("popupOverlayaddtitle");
+  //a
+function togglePopup() {
+  const overlay = document.getElementById("popupOverlay");
   overlay.classList.toggle("show");
 
   if (overlay.classList.contains("show")) {
-    const btnSubmit = document.getElementById("btn-submitaddtittle");
-    btnSubmit.addEventListener("click", handleButtonClickaddtitle);
+    const btnSubmit = document.getElementById("btn-submit");
+    btnSubmit.addEventListener("click", handleButtonClick);
   }
 }
 
-function handleButtonClickaddtitle(event) {
+function handleButtonClick(event) {
   event.preventDefault();
-  togglePopupaddtittle();
+  const selectedOption = document.getElementById("select_institucion").value;
+  document.getElementById("texto_institucion").textContent = selectedOption;
+  togglePopup();
 }
 
 var ins = document.getElementById("btn-close");
 ins &&
   ins.addEventListener("click", function () {
-    const btnSubmit = document.getElementById("btn-submitaddtitle");
-    btnSubmit.removeEventListener("click", handleButtonClickaddtitle);
+    const btnSubmit = document.getElementById("btn-submit");
+    btnSubmit.removeEventListener("click", handleButtonClick);
   });

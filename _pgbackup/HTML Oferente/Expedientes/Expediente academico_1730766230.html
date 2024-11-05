@@ -63,12 +63,12 @@
                 <div class="px-3 py-3 shadow-lg rounded-lg w-full border-2 border-solid border-gray-300">
                     <form>
                         <div class="flex justify-center m-1">
-                            <button type="button" class="btn-open-popup py-1 bg-blue-700 rounded-md hover:bg-blue-500 font-medium" onclick="togglePopupaddtittle()">
+                            <button class="btn-open-popup py-1 bg-blue-700 rounded-md hover:bg-blue-500 font-medium" onclick"togglePopupaddtittle">
                                 Agregar título
 </button>
                         </div>
                         <div class="p-1">
-                            <div id="popupOverlayaddtittle" class="overlay-container">
+                            <div id="popupOverlayaddtitle" class="verlay-container">
                                 <div class="popup-box2 rounded-lg border-2 border-solid border-gray-300 mb-1 px-5 py-2 bg-green-200">
                                     <h2 class="text-3xl font-medium text-black mb-5 text-left">
                         Agregar </h2>
@@ -317,95 +317,91 @@
                                             </div>
                                         </div>
                                     </form>
-                                    <div class="flex justify-center gap-1">
-                                        <button type="button" id="btn-submitaddtitle" class="btn-open-popup bg-blue-700 text-white py-1 font-medium rounded-md hover:bg-blue-500">
-                                            Guardar
-</button>                                         
-
-                                        <button type="button" onclick="togglePopupaddtitle()" class="btn-open-popup bg-blue-700 text-white py-1 font-medium rounded-md hover:bg-blue-500">
-                                            Atras
-</button>
+                                    <div class="flex justify-center gap-1"><a href="Expediente%20general.html"> <button type="button" class="btn-open-popup bg-blue-700 text-white py-1 font-medium rounded-md hover:bg-blue-500">
+                                                Guardar
+</button> </a>
+                                        <a href="Expediente%20general.html"> <button type="button" class="btn-open-popup bg-blue-700 text-white py-1 font-medium rounded-md hover:bg-blue-500">
+                                                Atras
+</button> </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="rounded-lg border-2 border-solid border-gray-300 mb-1 px-5 py-2 bg-green-200 w-full">
-                            <div class="flex flex-wrap px-10">
-                                <div class="flex w-full">
-                                    <div class="flex w-1/5">
-                                        <label class="block text-black mb-2 font-bold text-xl">Institución</label>
+                            <div class="flex flex-wrap -mx-2 mb-4" style="padding: 10px 30px;margin: 0;">
+                                <div class="w-full md:w-1/2 px-2 mb-4 md:mb-0" style="display: flex; width: 100%;">
+                                    <div class="flex w-full px-2 mb-4 md:mb-0">
+                                        <label class="block text-black mb-2" style="font-weight: bold;font-size: large;">Institución</label>
                                     </div>
-                                    <div class="flex w-1/5">
-                                        <label class="block text-black mb-2 font-bold text-xl">Título</label>
+                                    <div class="flex w-full px-2 mb-4 md:mb-0">
+                                        <label class="block text-black mb-2" style="font-weight: bold;font-size: large;">Título</label>
                                     </div>
-                                    <div class="flex w-1/5">
-                                        <label class="block text-black mb-2 font-bold text-xl">Campo de estudio</label>
+                                    <div class="flex w-full px-2 mb-4 md:mb-0">
+                                        <label class="block text-black mb-2" style="font-weight: bold;font-size: large;">Campo de estudio</label>
                                     </div>
-                                    <div class="flex w-1/5">
-                                        <label class="block text-black mb-2 font-bold text-xl">Fecha de ingreso</label>
+                                    <div class="flex w-full px-2 mb-4 md:mb-0">
+                                        <label class="block text-black mb-2" style="font-weight: bold;font-size: large;">Fecha de ingreso</label>
                                     </div>
-                                    <div class="flex w-1/5">
-                                        <label class="block text-black mb-2 font-bold text-xl">Fecha de salida</label>
+                                    <div class="flex w-full px-2 mb-4 md:mb-0">
+                                        <label class="block text-black mb-2" style="font-weight: bold;font-size: large;">Fecha de salida</label>
                                     </div>
                                 </div>
                             </div>
                             <div class="flex flex-no-wrap items-center py-4">
-                                <div class="bg-gray-500 flex-grow h-px"></div>
-                                <div class="bg-gray-500 flex-grow h-px"></div>
+                                <div class="bg-gray-500 flex-grow h-px max-w-full"></div>
+                                <div class="bg-gray-500 flex-grow h-px max-w-full"></div>
                             </div>
-                            <div class="flex flex-wrap px-10">
-                                <div class="w-full flex">
-                                    <div class="flex w-1/5">
-                                        <p class="block text-black font-normal">Universidad de Costa Rica</p>
+                            <div class="flex flex-wrap -mx-2 mb-4" style="/* border: solid */border-radius: 10px;padding: 15px 30px;margin: 0;">
+                                <div class="w-full md:w-1/2 px-2 mb-4 md:mb-0" style="display: flex; width: 100%;">
+                                    <div class="flex w-full px-2 mb-4 md:mb-0">
+                                        <p class="block text-black mb-2" style="font-weight: normal;font-size: large;">Universidad de Costa Rica</p>
                                     </div>
-                                    <div class="flex w-1/5">
-                                        <div class="flex">
-                                            <p class="block text-black font-normal">Administración de empresas</p>
-                                            <div class="flex w-full py-3 px-3">
-                                                <button type="button" class="btn-open-popup bg-blue-700 text-white py-1 font-medium rounded-md hover:bg-blue-500" onclick="togglePopuptm()">Ver</button>
-                                                <div id="popupOverlaytm" class="overlay-container">
-                                                    <div class="popup-box">
-                                                        <h2 class="font-bold mb-2" style="color: green; font-size: 20px;">Título</h2>
-                                                        <form class="form-container" id="form_institucion">
-                                                            <div class=" mb-5 gap-2">
-                                                                <label class="font-bold form-label">Título:</label>
-                                                                <p>Administración de empresas</p>
+                                    <div class="flex w-full px-2 mb-4 md:mb-0">
+                                        <p class="block text-black mb-2" style="font-weight: normal;font-size: large;">Administración de empresas</p>
+                                        <div class="flex w-full px-2 mb-4 md:mb-0" style="width: 57%;height: 75%;">
+                                            <button type="button" class="btn-open-popup bg-blue-600 text-white font-medium px-6 py-2 rounded-md hover:bg-blue-700" onclick="togglePopuptm()">Ver</button>
+                                            <div id="popupOverlaytm" class="overlay-container">
+                                                <div class="popup-box">
+                                                    <h2 class="font-bold mb-2" style="color: green; font-size: 20px;">Título</h2>
+                                                    <form class="form-container" id="form_institucion">
+                                                        <div class=" mb-5 gap-2">
+                                                            <label class="font-bold form-label">Título:</label>
+                                                            <p>Administración de empresas</p>
+                                                        </div>
+                                                        <div class="flex justify-center gap-10 mb-5">
+                                                            <div>
+                                                                <label class="font-bold form-label">Tomo:</label>
+                                                                <p>15</p>
                                                             </div>
-                                                            <div class="flex justify-center gap-10 mb-5">
-                                                                <div>
-                                                                    <label class="font-bold form-label">Tomo:</label>
-                                                                    <p>15</p>
-                                                                </div>
-                                                                <div>
-                                                                    <label class="font-bold form-label">Folio:</label>
-                                                                    <p>450</p>
-                                                                </div>
-                                                                <div>
-                                                                    <label class="font-bold form-label">Asiento:</label>
-                                                                    <p>135</p>
-                                                                </div>
+                                                            <div>
+                                                                <label class="font-bold form-label">Folio:</label>
+                                                                <p>450</p>
                                                             </div>
-                                                            <div class="mb-5">
-                                                                <label class="font-bold form-label">Fecha de emisión:</label>
-                                                                <p>15/12/2019</p>
+                                                            <div>
+                                                                <label class="font-bold form-label">Asiento:</label>
+                                                                <p>135</p>
                                                             </div>
-                                                            <button class="btn-close-popup w-1/2 h-1/2 mt-0 self-center" onclick="togglePopuptm()" type="button">Cerrar</button>
-                                                        </form>
-                                                        <div class="flex flex-row">
+                                                        </div>
+                                                        <div class="mb-5">
+                                                            <label class="font-bold form-label">Fecha de emisión:</label>
+                                                            <p>15/12/2019</p>
+                                                        </div>
+                                                        <button class="btn-close-popup w-1/2 h-1/2 mt-0 self-center" onclick="togglePopuptm()" type="button">Cerrar</button>
+                                                    </form>
+                                                    <div class="flex flex-row">
 </div>
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="flex w-1/5">
-                                        <p class="block text-black font-normal">Administración</p>
+                                    <div class="flex w-full px-2 mb-4 md:mb-0">
+                                        <p class="block text-black mb-2" style="font-weight: normal;font-size: large;">Administración</p>
                                     </div>
-                                    <div class="flex w-1/5">
-                                        <p class="block text-black font-normal">02/2014</p>
+                                    <div class="flex w-full px-2 mb-4 md:mb-0">
+                                        <p class="block text-black mb-2" style="font-weight: normal;font-size: large;">02/2014</p>
                                     </div>
-                                    <div class="flex w-1/5">
-                                        <p class="block text-black font-normal">12/2018</p>
+                                    <div class="flex w-full px-2 mb-4 md:mb-0">
+                                        <p class="block text-black mb-2" style="font-weight: normal;font-size: large;">12/2018</p>
                                     </div>
                                 </div>
                             </div>

@@ -63,26 +63,26 @@
                 <div class="px-3 py-3 shadow-lg rounded-lg w-full border-2 border-solid border-gray-300">
                     <form>
                         <div class="flex justify-center m-1">
-                            <button type="button" class="btn-open-popup py-1 bg-blue-700 rounded-md hover:bg-blue-500 font-medium" onclick="togglePopupaddtittle()">
+                            <button class="btn-open-popup py-1 bg-blue-700 rounded-md hover:bg-blue-500 font-medium" onclick"togglePopupaddtittle">
                                 Agregar título
 </button>
                         </div>
                         <div class="p-1">
-                            <div id="popupOverlayaddtittle" class="overlay-container">
+                            <div id="popupOverlayaddtitle" class="verlay-container">
                                 <div class="popup-box2 rounded-lg border-2 border-solid border-gray-300 mb-1 px-5 py-2 bg-green-200">
                                     <h2 class="text-3xl font-medium text-black mb-5 text-left">
                         Agregar </h2>
                                     <form>
                                         <div class="flex flex-wrap mx-2 mb-5">
-                                            <div class="w-1/3 px-2">
-                                                <div class="flex w-full mb-1">
+                                            <div class="w-1/3 px-2 mb-5">
+                                                <div class="flex">
                                                     <div class="flex w-1/4">
                                                         <label class="block text-black font-bold">Institución:</label>
                                                     </div>
                                                     <div class="flex w-3/4 px-2 mb-4 md:mb-0">
-                                                        <button type="button" class="btn-open-popup w-1/2 bg-blue-700 text-white font-medium px-6 py-1 rounded-md hover:bg-blue-500" onclick="togglePopup()">Buscar
+                                                        <button type="button" class="btn-open-popup w-1/2 bg-blue-600 text-white font-medium px-6 py-2 rounded-md hover:bg-blue-700" onclick="togglePopup()">Buscar
 </button>
-                                                        <div id="popupOverlay" class="overlay-container">
+                                                        <div id="popupOverlay" class="verlay-container">
                                                             <div class="popup-box">
                                                                 <h2 style="color: green">Institución</h2>
                                                                 <form class="form-container" id="form_institucion">
@@ -178,70 +178,56 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="flex w-full px-2 my-4"><span class=" font-bold text-xl text-black" id="texto_institucion"></span>
+                                                <div class="flex w-full px-2 mb-4 md:mb-0" style="width: 65%; margin-top: 5%"><span style="font-weight: bold; font-size: large" id="texto_institucion"></span>
                                                 </div>
                                             </div>
-                                            <div class="w-1/3 py-2">
-                                                <div class="flex mb-5">
-                                                    <div class="flex w-2/5">
-                                                        <label class="block text-black font-bold">Título:</label>
+                                            <div class="w-full md:w-1/2 px-2" style="width: 33%">
+                                                <div class="flex" style="margin-bottom: 2%">
+                                                    <div class="flex w-full px-2 mb-4 md:mb-0" style="width: 35%">
+                                                        <label class="block text-gray-700 mb-2">Título:</label>
                                                     </div>
-                                                    <div class="flex w-2/5 px-2">
-                                                        <button type="button" class="btn-open-popup bg-blue-700 text-white py-1 font-medium rounded-md hover:bg-blue-500" onclick="togglePopupt()">
-                                                            Agregar
+                                                    <div class="flex w-full px-2 mb-4 md:mb-0" style="width: 57%">
+                                                        <button type="button" class="btn-open-popup bg-blue-600 text-white font-medium px-6 py-2 rounded-md hover:bg-blue-700" onclick="togglePopupt()">
+                                                            Agregar información
 </button>
                                                         <div id="popupOverlayt" class="overlay-container">
                                                             <div class="popup-box">
                                                                 <h2 style="color: green">Título</h2>
                                                                 <form class="form-container" id="form_institucion">
-                                                                    <label class="form-label text-black font-bold">Título:</label>
-                                                                    <div class="flex w-full px-5">
-                                                                        <input type="text" class="block border border-gray-300 mb-1 px-3 py-2 rounded-md"/>
-                                                                    </div>
-                                                                    <div class="flex mb-1">
-                                                                        <div class="flex flex-col w-1/3 px-5">
-                                                                            <label class="form-label text-black text-center font-bold">Tomo:</label>
-                                                                            <input type="text" class="border border-gray-300 px-3 py-2 rounded-md"/>
-                                                                        </div>
-                                                                        <div class="flex flex-col w-1/3 px-5">
-                                                                            <label class="form-label text-black text-center font-bold">Folio:</label>
-                                                                            <input type="text" class="block border border-gray-300 px-3 py-2 rounded-md"/>
-                                                                        </div>
-                                                                        <div class="flex flex-col w-1/3 px-5">
-                                                                            <label class="form-label text-black text-center font-bold">Asiento:</label>
-                                                                            <input type="text" class="block border border-gray-300 px-3 py-2 rounded-md"/>
-                                                                        </div>
-                                                                    </div>
-                                                                    <label class="form-label text-black font-bold">Fecha de emisión:</label>
-                                                                    <div class="flex w-full  px-5">
-                                                                        <input type="text" class="block border border-gray-300 px-3 py-2 rounded-md w-3/5" placeholder="dd/mm/aaaa"/>
-                                                                    </div>
-                                                                    <label class="form-label text-black font-bold">Subir título:</label>
-                                                                    <button type="button" class="w-1/2 bg-blue-700 text-white font-medium px-6 py-2 rounded-md hover:bg-blue-500 my-2 self-center">
+                                                                    <label class="form-label">Título:</label>
+                                                                    <input type="text" class="block border border-gray-300 px-3 py-2 rounded-md" style="margin-left: 2%; width: 100%"/>
+                                                                    <label class="form-label">Tomo:</label>
+                                                                    <input type="text" class="block border border-gray-300 px-3 py-2 rounded-md" style="margin-left: 2%; width: 100%"/>
+                                                                    <label class="form-label">Folio:</label>
+                                                                    <input type="text" class="block border border-gray-300 px-3 py-2 rounded-md" style="margin-left: 2%; width: 100%"/>
+                                                                    <label class="form-label">Asiento:</label>
+                                                                    <input type="text" class="block border border-gray-300 px-3 py-2 rounded-md" style="margin-left: 2%; width: 100%"/>
+                                                                    <label class="form-label">Fecha de emisión:</label>
+                                                                    <input type="text" class="block border border-gray-300 px-3 py-2 rounded-md" style="margin-left: 2%; width: 100%"/>
+                                                                    <label class="form-label mb-0">Subir título:</label>
+                                                                    <button type="button" class="w-1/2 bg-blue-600 text-white font-medium px-6 py-2 rounded-md hover:bg-blue-700 my-2" style="align-self: center">
                                                                         Subir
 </button>
                                                                 </form>
                                                                 <div class="flex flex-row">
-                                                                    <button id="btn-submitt" class="btn-submit w-1/2 mr-1" type="button">
+                                                                    <button id="btn-submitt" class="btn-submit w-1/2 h-1/2 mr-1 mb-0" type="button">
                                                                         Guardar
 </button>
-                                                                    <button class="btn-close-popup w-1/2" onclick="togglePopupt()" type="button">
+                                                                    <button class="btn-close-popup w-1/2 h-1/2 mt-0" onclick="togglePopupt()" type="button">
                                                                         Cerrar
 </button>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="flex w-1/4 mb-2 mt-2">
-                                                        <input type="checkbox" id="check_titulo" class="w-7"/>
-                                                    </div>
+                                                    <input type="checkbox" id="check_titulo" style="width: 20px;"/>
                                                 </div>
-                                                <div class="flex">
-                                                    <div class="flex w-2/5">
-                                                        <label class="text-black font-bold">Fecha de ingreso:</label>
+                                                <div class="flex" style="margin-bottom: 2%">
+                                                    <div class="flex w-full px-2 mb-4 md:mb-0" style="width: 35%">
+                                                        <label class="block text-gray-700 mb-2">Fecha de ingreso:</label>
                                                     </div>
-                                                    <div class="flex w-3/5 gap-1">
-                                                        <select class="block w-1/2 border border-gray-300 px-3 py-1 rounded-md">
+                                                    <div class="flex w-full px-2 mb-4 md:mb-0" style="width: 65%; margin-left: 1%">
+                                                        <select class="block w-full border border-gray-300 px-3 py-2 rounded-md" style="width: 50%">
                                                             <option>Enero</option>
                                                             <option>Febrero</option>
                                                             <option>Marzo</option>
@@ -255,7 +241,7 @@
                                                             <option>Noviembre</option>
                                                             <option>Diciembre</option>
                                                         </select>
-                                                        <select class="block w-1/2 border border-gray-300 px-3 py-1 rounded-md">
+                                                        <select class="block w-full border border-gray-300 px-3 py-2 rounded-md" style="width: 50%; margin-left: 1%">
                                                             <option>2024</option>
                                                             <option>2023</option>
                                                             <option>2022</option>
@@ -271,21 +257,21 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="w-1/3 py-2 px-2">
-                                                <div class="flex mb-4">
-                                                    <div class="flex w-2/5">
-                                                        <label class="block text-black font-bold">Campo de estudio:</label>
+                                            <div class="w-full md:w-1/2 px-2" style="width: 33%">
+                                                <div class="flex" style="margin-bottom: 2%">
+                                                    <div class="flex w-full px-2 mb-4 md:mb-0" style="width: 35%">
+                                                        <label class="block text-gray-700 mb-2">Campo de estudio:</label>
                                                     </div>
-                                                    <div class="flex w-3/5">
-                                                        <input type="text" class="block w-full border border-gray-300 px-3 py-2 rounded-md" placeholder="Educación, administración"/>
+                                                    <div class="flex w-full px-2 mb-4 md:mb-0" style="width: 65%">
+                                                        <input type="text" class="block border border-gray-300 px-3 py-2 rounded-md" style="margin-left: 2%; width: 100%" placeholder="Educación, administración"/>
                                                     </div>
                                                 </div>
-                                                <div class="flex mb-2">
-                                                    <div class="flex w-2/5">
-                                                        <label class="block text-black font-bold">Fecha de salida:</label>
+                                                <div class="flex" style="margin-bottom: 2%">
+                                                    <div class="flex w-full px-2 mb-4 md:mb-0" style="width: 35%">
+                                                        <label class="block text-gray-700 mb-2">Fecha de salida:</label>
                                                     </div>
-                                                    <div class="flex w-3/5 gap-1">
-                                                        <select class="block w-1/2 border border-gray-300 px-3 py-1 rounded-md">
+                                                    <div class="flex w-full px-2 mb-4 md:mb-0" style="width: 65%; margin-left: 1%">
+                                                        <select class="block w-full border border-gray-300 px-3 py-2 rounded-md" style="width: 50%">
                                                             <option>Enero</option>
                                                             <option>Febrero</option>
                                                             <option>Marzo</option>
@@ -299,7 +285,7 @@
                                                             <option>Noviembre</option>
                                                             <option>Diciembre</option>
                                                         </select>
-                                                        <select class="block w-1/2 border border-gray-300 px-3 py-1 rounded-md">
+                                                        <select class="block w-full border border-gray-300 px-3 py-2 rounded-md" style="width: 50%; margin-left: 1%">
                                                             <option>2024</option>
                                                             <option>2023</option>
                                                             <option>2022</option>
@@ -317,95 +303,91 @@
                                             </div>
                                         </div>
                                     </form>
-                                    <div class="flex justify-center gap-1">
-                                        <button type="button" id="btn-submitaddtitle" class="btn-open-popup bg-blue-700 text-white py-1 font-medium rounded-md hover:bg-blue-500">
-                                            Guardar
-</button>                                         
-
-                                        <button type="button" onclick="togglePopupaddtitle()" class="btn-open-popup bg-blue-700 text-white py-1 font-medium rounded-md hover:bg-blue-500">
-                                            Atras
-</button>
+                                    <div style="display: flex; justify-content: center"><a href="Expediente%20general.html"> <button type="button" class="w-full bg-blue-600 text-white font-medium px-6 py-2 rounded-md hover:bg-blue-700">
+                                                Guardar
+</button> </a>
+                                        <a href="Expediente%20general.html"> <button type="button" class="w-full bg-blue-600 text-white font-medium px-6 py-2 rounded-md hover:bg-blue-700" style="margin-left: 10%">
+                                                Atras
+</button> </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="rounded-lg border-2 border-solid border-gray-300 mb-1 px-5 py-2 bg-green-200 w-full">
-                            <div class="flex flex-wrap px-10">
-                                <div class="flex w-full">
-                                    <div class="flex w-1/5">
-                                        <label class="block text-black mb-2 font-bold text-xl">Institución</label>
+                            <div class="flex flex-wrap -mx-2 mb-4" style="padding: 10px 30px;margin: 0;">
+                                <div class="w-full md:w-1/2 px-2 mb-4 md:mb-0" style="display: flex; width: 100%;">
+                                    <div class="flex w-full px-2 mb-4 md:mb-0">
+                                        <label class="block text-black mb-2" style="font-weight: bold;font-size: large;">Institución</label>
                                     </div>
-                                    <div class="flex w-1/5">
-                                        <label class="block text-black mb-2 font-bold text-xl">Título</label>
+                                    <div class="flex w-full px-2 mb-4 md:mb-0">
+                                        <label class="block text-black mb-2" style="font-weight: bold;font-size: large;">Título</label>
                                     </div>
-                                    <div class="flex w-1/5">
-                                        <label class="block text-black mb-2 font-bold text-xl">Campo de estudio</label>
+                                    <div class="flex w-full px-2 mb-4 md:mb-0">
+                                        <label class="block text-black mb-2" style="font-weight: bold;font-size: large;">Campo de estudio</label>
                                     </div>
-                                    <div class="flex w-1/5">
-                                        <label class="block text-black mb-2 font-bold text-xl">Fecha de ingreso</label>
+                                    <div class="flex w-full px-2 mb-4 md:mb-0">
+                                        <label class="block text-black mb-2" style="font-weight: bold;font-size: large;">Fecha de ingreso</label>
                                     </div>
-                                    <div class="flex w-1/5">
-                                        <label class="block text-black mb-2 font-bold text-xl">Fecha de salida</label>
+                                    <div class="flex w-full px-2 mb-4 md:mb-0">
+                                        <label class="block text-black mb-2" style="font-weight: bold;font-size: large;">Fecha de salida</label>
                                     </div>
                                 </div>
                             </div>
                             <div class="flex flex-no-wrap items-center py-4">
-                                <div class="bg-gray-500 flex-grow h-px"></div>
-                                <div class="bg-gray-500 flex-grow h-px"></div>
+                                <div class="bg-gray-500 flex-grow h-px max-w-full"></div>
+                                <div class="bg-gray-500 flex-grow h-px max-w-full"></div>
                             </div>
-                            <div class="flex flex-wrap px-10">
-                                <div class="w-full flex">
-                                    <div class="flex w-1/5">
-                                        <p class="block text-black font-normal">Universidad de Costa Rica</p>
+                            <div class="flex flex-wrap -mx-2 mb-4" style="/* border: solid */border-radius: 10px;padding: 15px 30px;margin: 0;">
+                                <div class="w-full md:w-1/2 px-2 mb-4 md:mb-0" style="display: flex; width: 100%;">
+                                    <div class="flex w-full px-2 mb-4 md:mb-0">
+                                        <p class="block text-black mb-2" style="font-weight: normal;font-size: large;">Universidad de Costa Rica</p>
                                     </div>
-                                    <div class="flex w-1/5">
-                                        <div class="flex">
-                                            <p class="block text-black font-normal">Administración de empresas</p>
-                                            <div class="flex w-full py-3 px-3">
-                                                <button type="button" class="btn-open-popup bg-blue-700 text-white py-1 font-medium rounded-md hover:bg-blue-500" onclick="togglePopuptm()">Ver</button>
-                                                <div id="popupOverlaytm" class="overlay-container">
-                                                    <div class="popup-box">
-                                                        <h2 class="font-bold mb-2" style="color: green; font-size: 20px;">Título</h2>
-                                                        <form class="form-container" id="form_institucion">
-                                                            <div class=" mb-5 gap-2">
-                                                                <label class="font-bold form-label">Título:</label>
-                                                                <p>Administración de empresas</p>
+                                    <div class="flex w-full px-2 mb-4 md:mb-0">
+                                        <p class="block text-black mb-2" style="font-weight: normal;font-size: large;">Administración de empresas</p>
+                                        <div class="flex w-full px-2 mb-4 md:mb-0" style="width: 57%;height: 75%;">
+                                            <button type="button" class="btn-open-popup bg-blue-600 text-white font-medium px-6 py-2 rounded-md hover:bg-blue-700" onclick="togglePopuptm()">Ver</button>
+                                            <div id="popupOverlaytm" class="overlay-container">
+                                                <div class="popup-box">
+                                                    <h2 class="font-bold mb-2" style="color: green; font-size: 20px;">Título</h2>
+                                                    <form class="form-container" id="form_institucion">
+                                                        <div class=" mb-5 gap-2">
+                                                            <label class="font-bold form-label">Título:</label>
+                                                            <p>Administración de empresas</p>
+                                                        </div>
+                                                        <div class="flex justify-center gap-10 mb-5">
+                                                            <div>
+                                                                <label class="font-bold form-label">Tomo:</label>
+                                                                <p>15</p>
                                                             </div>
-                                                            <div class="flex justify-center gap-10 mb-5">
-                                                                <div>
-                                                                    <label class="font-bold form-label">Tomo:</label>
-                                                                    <p>15</p>
-                                                                </div>
-                                                                <div>
-                                                                    <label class="font-bold form-label">Folio:</label>
-                                                                    <p>450</p>
-                                                                </div>
-                                                                <div>
-                                                                    <label class="font-bold form-label">Asiento:</label>
-                                                                    <p>135</p>
-                                                                </div>
+                                                            <div>
+                                                                <label class="font-bold form-label">Folio:</label>
+                                                                <p>450</p>
                                                             </div>
-                                                            <div class="mb-5">
-                                                                <label class="font-bold form-label">Fecha de emisión:</label>
-                                                                <p>15/12/2019</p>
+                                                            <div>
+                                                                <label class="font-bold form-label">Asiento:</label>
+                                                                <p>135</p>
                                                             </div>
-                                                            <button class="btn-close-popup w-1/2 h-1/2 mt-0 self-center" onclick="togglePopuptm()" type="button">Cerrar</button>
-                                                        </form>
-                                                        <div class="flex flex-row">
+                                                        </div>
+                                                        <div class="mb-5">
+                                                            <label class="font-bold form-label">Fecha de emisión:</label>
+                                                            <p>15/12/2019</p>
+                                                        </div>
+                                                        <button class="btn-close-popup w-1/2 h-1/2 mt-0 self-center" onclick="togglePopuptm()" type="button">Cerrar</button>
+                                                    </form>
+                                                    <div class="flex flex-row">
 </div>
-                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="flex w-1/5">
-                                        <p class="block text-black font-normal">Administración</p>
+                                    <div class="flex w-full px-2 mb-4 md:mb-0">
+                                        <p class="block text-black mb-2" style="font-weight: normal;font-size: large;">Administración</p>
                                     </div>
-                                    <div class="flex w-1/5">
-                                        <p class="block text-black font-normal">02/2014</p>
+                                    <div class="flex w-full px-2 mb-4 md:mb-0">
+                                        <p class="block text-black mb-2" style="font-weight: normal;font-size: large;">02/2014</p>
                                     </div>
-                                    <div class="flex w-1/5">
-                                        <p class="block text-black font-normal">12/2018</p>
+                                    <div class="flex w-full px-2 mb-4 md:mb-0">
+                                        <p class="block text-black mb-2" style="font-weight: normal;font-size: large;">12/2018</p>
                                     </div>
                                 </div>
                             </div>

@@ -26,6 +26,10 @@ ti &&
     btnSubmitt.removeEventListener("click", handleButtonClickt);
   });
 
+
+
+
+
 //mostrar
 function togglePopuptm() {
   const overlaytm = document.getElementById("popupOverlaytm");
@@ -72,27 +76,4 @@ ins &&
   ins.addEventListener("click", function () {
     const btnSubmit = document.getElementById("btn-submit");
     btnSubmit.removeEventListener("click", handleButtonClick);
-  });
-
-//agregar titulo
-function togglePopupaddtittle() {
-  const overlay = document.getElementById("popupOverlayaddtitle");
-  overlay.classList.toggle("show");
-
-  if (overlay.classList.contains("show")) {
-    const btnSubmit = document.getElementById("btn-submitaddtittle");
-    btnSubmit.addEventListener("click", handleButtonClickaddtitle);
-  }
-}
-
-function handleButtonClickaddtitle(event) {
-  event.preventDefault();
-  togglePopupaddtittle();
-}
-
-var ins = document.getElementById("btn-close");
-ins &&
-  ins.addEventListener("click", function () {
-    const btnSubmit = document.getElementById("btn-submitaddtitle");
-    btnSubmit.removeEventListener("click", handleButtonClickaddtitle);
   });

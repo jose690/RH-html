@@ -75,19 +75,19 @@ ins &&
   });
 
 //agregar titulo
-function togglePopupaddtittle() {
+function togglePopupaddtitle() {
   const overlay = document.getElementById("popupOverlayaddtitle");
   overlay.classList.toggle("show");
 
   if (overlay.classList.contains("show")) {
-    const btnSubmit = document.getElementById("btn-submitaddtittle");
+    const btnSubmit = document.getElementById("btn-submitaddtitle");
     btnSubmit.addEventListener("click", handleButtonClickaddtitle);
   }
 }
 
 function handleButtonClickaddtitle(event) {
   event.preventDefault();
-  togglePopupaddtittle();
+  togglePopup();
 }
 
 var ins = document.getElementById("btn-close");

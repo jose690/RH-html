@@ -34,26 +34,4 @@ function togglePopupv() {
 
 function handleButtonClickv(event) {
     event.preventDefault();
-    togglePopupv();
-    togglePopupn();
 }
-
-document.getElementById("btn-submitv").addEventListener("click", handleButtonClickv);
-
-//nuevos datos
-function togglePopupn(){
-    const overlay = document.getElementById("popupOverlayn");
-    overlay.classList.toggle("show");
-
-    if (overlay.classList.contains("show")) {
-        const btnSubmit = document.getElementById("btn-submitn");
-        btnSubmit.addEventListener("click", handleButtonClickn);
-    }
-}
-
-function handleButtonClickn(event) {
-    event.preventDefault();
-    togglePopupn();
-}
-
-document.getElementById("btn-submitn").addEventListener("click",handleButtonClickn);

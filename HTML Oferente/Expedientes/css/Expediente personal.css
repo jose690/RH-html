@@ -29,10 +29,10 @@
 
 .popup-box {
     background: #fff;
-    padding: 24px;
+    padding: 20px;
     border-radius: 12px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-    width: 320px;
+    width: 360px;
     text-align: center;
     opacity: 0;
     transform: scale(0.8);
@@ -62,7 +62,7 @@
 }
 
 .btn-submit,
-        .btn-close-popup {
+.btn-close-popup {
     padding: 12px 24px;
     border: none;
     border-radius: 8px;

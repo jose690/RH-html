@@ -35,7 +35,6 @@ function togglePopupv() {
 function handleButtonClickv(event) {
     event.preventDefault();
     togglePopupv();
-    togglePopupn();
 }
 
 document.getElementById("btn-submitv").addEventListener("click", handleButtonClickv);

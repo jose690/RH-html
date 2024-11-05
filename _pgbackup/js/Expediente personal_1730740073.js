@@ -24,36 +24,26 @@ document.getElementById("btn-submiti").addEventListener("click", handleButtonCli
 //verificar
 function togglePopupv() {
     const overlay = document.getElementById("popupOverlayv");
+    const btnSubmit = document.getElementById("btn-submitv");
+
+    // Alterna la visibilidad del popup
     overlay.classList.toggle("show");
 
     if (overlay.classList.contains("show")) {
-        const btnSubmit = document.getElementById("btn-submitv");
+        // Agregar el evento al botón de submit solo cuando el popup esté visible
         btnSubmit.addEventListener("click", handleButtonClickv);
+    } else {
+        // Remueve el evento para evitar que se acumulen listeners
+        btnSubmit.removeEventListener("click", handleButtonClickv);
     }
 }
 
 function handleButtonClickv(event) {
     event.preventDefault();
+
+    // Cierra el popup
     togglePopupv();
-    togglePopupn();
 }
 
-document.getElementById("btn-submitv").addEventListener("click", handleButtonClickv);
-
-//nuevos datos
-function togglePopupn(){
-    const overlay = document.getElementById("popupOverlayn");
-    overlay.classList.toggle("show");
-
-    if (overlay.classList.contains("show")) {
-        const btnSubmit = document.getElementById("btn-submitn");
-        btnSubmit.addEventListener("click", handleButtonClickn);
-    }
-}
-
-function handleButtonClickn(event) {
-    event.preventDefault();
-    togglePopupn();
-}
-
-document.getElementById("btn-submitn").addEventListener("click",handleButtonClickn);
+// Agregar evento para abrir/cerrar el popup
+document.getElementById("btn-open-popup").addEventListener("click", togglePopupv);

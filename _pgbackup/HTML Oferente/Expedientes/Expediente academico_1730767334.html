@@ -63,12 +63,12 @@
                 <div class="px-3 py-3 shadow-lg rounded-lg w-full border-2 border-solid border-gray-300">
                     <form>
                         <div class="flex justify-center m-1">
-                            <button type="button" class="btn-open-popup py-1 bg-blue-700 rounded-md hover:bg-blue-500 font-medium" onclick="togglePopupaddtittle()">
+                            <button class="btn-open-popup py-1 bg-blue-700 rounded-md hover:bg-blue-500 font-medium" onclick"togglePopupaddtittle">
                                 Agregar título
 </button>
                         </div>
                         <div class="p-1">
-                            <div id="popupOverlayaddtittle" class="overlay-container">
+                            <div id="popupOverlayaddtitle" class="verlay-container">
                                 <div class="popup-box2 rounded-lg border-2 border-solid border-gray-300 mb-1 px-5 py-2 bg-green-200">
                                     <h2 class="text-3xl font-medium text-black mb-5 text-left">
                         Agregar </h2>
@@ -317,14 +317,12 @@
                                             </div>
                                         </div>
                                     </form>
-                                    <div class="flex justify-center gap-1">
-                                        <button type="button" id="btn-submitaddtitle" class="btn-open-popup bg-blue-700 text-white py-1 font-medium rounded-md hover:bg-blue-500">
-                                            Guardar
-</button>                                         
-
-                                        <button type="button" onclick="togglePopupaddtitle()" class="btn-open-popup bg-blue-700 text-white py-1 font-medium rounded-md hover:bg-blue-500">
-                                            Atras
-</button>
+                                    <div class="flex justify-center gap-1"><a href="Expediente%20general.html"> <button type="button" class="btn-open-popup bg-blue-700 text-white py-1 font-medium rounded-md hover:bg-blue-500">
+                                                Guardar
+</button> </a>
+                                        <a href="Expediente%20general.html"> <button type="button" class="btn-open-popup bg-blue-700 text-white py-1 font-medium rounded-md hover:bg-blue-500">
+                                                Atras
+</button> </a>
                                     </div>
                                 </div>
                             </div>
@@ -355,14 +353,14 @@
                             </div>
                             <div class="flex flex-wrap px-10">
                                 <div class="w-full flex">
-                                    <div class="flex w-1/5">
+                                    <div class="flex w-full">
                                         <p class="block text-black font-normal">Universidad de Costa Rica</p>
                                     </div>
-                                    <div class="flex w-1/5">
+                                    <div class="flex w-full">
                                         <div class="flex">
                                             <p class="block text-black font-normal">Administración de empresas</p>
-                                            <div class="flex w-full py-3 px-3">
-                                                <button type="button" class="btn-open-popup bg-blue-700 text-white py-1 font-medium rounded-md hover:bg-blue-500" onclick="togglePopuptm()">Ver</button>
+                                            <div class="flex w-full px-2 mb-4 md:mb-0" style="width: 57%;height: 75%;">
+                                                <button type="button" class="btn-open-popup bg-blue-600 text-white font-medium px-6 py-2 rounded-md hover:bg-blue-700" onclick="togglePopuptm()">Ver</button>
                                                 <div id="popupOverlaytm" class="overlay-container">
                                                     <div class="popup-box">
                                                         <h2 class="font-bold mb-2" style="color: green; font-size: 20px;">Título</h2>
@@ -398,13 +396,13 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="flex w-1/5">
+                                    <div class="flex w-full">
                                         <p class="block text-black font-normal">Administración</p>
                                     </div>
-                                    <div class="flex w-1/5">
+                                    <div class="flex w-full">
                                         <p class="block text-black font-normal">02/2014</p>
                                     </div>
-                                    <div class="flex w-1/5">
+                                    <div class="flex w-full">
                                         <p class="block text-black font-normal">12/2018</p>
                                     </div>
                                 </div>

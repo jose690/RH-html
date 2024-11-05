@@ -32,7 +32,7 @@
     padding: 24px;
     border-radius: 12px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-    width: 320px;
+    width: 100%;
     text-align: center;
     opacity: 0;
     transform: scale(0.8);
@@ -80,11 +80,9 @@
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
-    width: 50%;
 }
 
 .btn-submit {
-    margin-top: 12px;
     background-color: green;
     color: #fff;
 }
