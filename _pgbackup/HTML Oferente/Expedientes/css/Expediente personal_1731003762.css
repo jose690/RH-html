@@ -1,21 +1,3 @@
-.cuadroAcademico,
-.cuadroProfesional,
-.cuadroServicio,
-.cuadroIdiomas {
-    width: 210px;
-}
-
-.tituloAcademico,
-.tituloProfesional,
-.tituloServicio,
-.tituloIdiomas {
-    width: 70px;
-}
-
-.fecha {
-    width: 160px;
-}
-
 .tituloFecha,
 .tituloHabitacion,
 .tituloCivil {
@@ -34,8 +16,8 @@
 }
 
 .tituloIdentificacion,
-.tituloTelefono,
-.tituloSexo {
+tituloTelefono,
+tituloSexo {
     width: 100px;
 }
 

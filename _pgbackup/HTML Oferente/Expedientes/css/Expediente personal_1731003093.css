@@ -1,41 +1,11 @@
-.cuadroAcademico,
-.cuadroProfesional,
-.cuadroServicio,
-.cuadroIdiomas {
-    width: 210px;
-}
-
-.tituloAcademico,
-.tituloProfesional,
-.tituloServicio,
-.tituloIdiomas {
-    width: 70px;
-}
-
-.fecha {
-    width: 160px;
-}
-
-.tituloFecha,
-.tituloHabitacion,
-.tituloCivil {
-    width: 140px;
-}
-
-.tituloNombre,
-.tituloApellidos,
-.tituloCorreo {
-    width: 126px;
-}
-
 .espaciosBlanco {
     width: 200px;
     height: 33px;
 }
 
 .tituloIdentificacion,
-.tituloTelefono,
-.tituloSexo {
+tituloTelefono,
+tituloSexo {
     width: 100px;
 }
 

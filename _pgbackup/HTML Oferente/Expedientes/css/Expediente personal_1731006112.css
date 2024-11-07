@@ -34,8 +34,8 @@
 }
 
 .tituloIdentificacion,
-.tituloTelefono,
-.tituloSexo {
+tituloTelefono,
+tituloSexo {
     width: 100px;
 }
 

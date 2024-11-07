@@ -1,41 +1,16 @@
-.cuadroAcademico,
-.cuadroProfesional,
-.cuadroServicio,
-.cuadroIdiomas {
-    width: 210px;
+@media (min-width: 1536px){
+    .identificacionw {
+        width: 165px;
+    }
 }
 
-.tituloAcademico,
-.tituloProfesional,
-.tituloServicio,
-.tituloIdiomas {
-    width: 70px;
-}
-
-.fecha {
-    width: 160px;
-}
-
-.tituloFecha,
-.tituloHabitacion,
-.tituloCivil {
-    width: 140px;
-}
-
-.tituloNombre,
-.tituloApellidos,
-.tituloCorreo {
-    width: 126px;
-}
-
-.espaciosBlanco {
-    width: 200px;
-    height: 33px;
+.identificacionwi {
+    width: 165px;
 }
 
 .tituloIdentificacion,
-.tituloTelefono,
-.tituloSexo {
+tituloTelefono,
+tituloSexo {
     width: 100px;
 }
 
