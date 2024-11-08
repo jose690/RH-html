@@ -42,9 +42,9 @@
             <div class="container mx-auto md:flex-row p-2 w-max items-center">
                 <div class="w-full">
                     <ul class="flex w-fit items-end">
-                        <li><a href="Expediente%20personal.html" class="block text-sm 2xl:text-base w-full py-2 px-1 rounded-lg text-black hover:bg-blue-500 hover:text-white transition duration-300 border border-gray-300"> Expediente personal </a>
+                        <li><a href="Expediente%20personal.html" class="font-medium text-sm 2xl:text-base block w-full py-3 px-2 rounded-lg bg-blue-700 hover:bg-blue-500 text-white transition duration-300 border border-gray-300"> Expediente personal </a>
                         </li>
-                        <li><a href="Expediente%20academico.html" class="font-medium text-sm 2xl:text-base block w-full py-3 px-2 rounded-lg bg-blue-700 hover:bg-blue-500 text-white transition duration-300 border border-gray-300"> Expediente académico </a>
+                        <li><a href="Expediente%20academico.html" class="block text-sm 2xl:text-base w-full py-2 px-1 rounded-lg text-black hover:bg-blue-500 hover:text-white transition duration-300 border border-gray-300"> Expediente académico </a>
                         </li>
                         <li><a href="Expediente%20profesional.html" class="block text-sm 2xl:text-base w-full py-2 px-1 rounded-lg text-black hover:bg-blue-500 hover:text-white transition duration-300 border border-gray-300"> Expediente profesional </a>
                         </li>
@@ -60,7 +60,7 @@
                 <div class="shadow-lg rounded-lg w-fit border-2 border-solid border-gray-300">
                     <form class="p-1">
                         <div class="flex justify-center w-fit">
-                            <button type="button" class="text-sm 2xl:text-base btn-open-popup py-1 bg-blue-700 rounded-md hover:bg-blue-500 font-medium" onclick="togglePopupaddtittle()">
+                            <button type="button" class="btn-open-popup py-1 bg-blue-700 rounded-md hover:bg-blue-500 font-medium" onclick="togglePopupaddtittle()">
                                 Agregar título
 </button>
                         </div>
@@ -313,7 +313,7 @@
                                         </div>
                                     </form>
                                     <div class="flex justify-center gap-1">
-                                        <button type="button" onclick="togglePopupaddtittle()" class="btn-open-popup bg-blue-700 text-white py-1 font-medium rounded-md hover:bg-blue-500">
+                                        <button type="button" id="btn-submitaddtitle" class="btn-open-popup bg-blue-700 text-white py-1 font-medium rounded-md hover:bg-blue-500">
                                             Guardar
 </button>                                         
                                         <button type="button" onclick="togglePopupaddtittle()" class="btn-open-popup bg-blue-700 text-white py-1 font-medium rounded-md hover:bg-blue-500">
@@ -326,22 +326,22 @@
                         <div class="rounded-lg border-2 border-solid border-gray-300 mb-1 bg-green-200 w-fit">
                             <div class="flex w-fit justify-center">
                                 <div class="flex w-1/6">
-                                    <label class="text-black mb-1 font-bold text-sm 2xl:text-base">Institución</label>
+                                    <label class="text-black mb-1 font-bold text-sm">Institución</label>
                                 </div>
                                 <div class="flex w-1/6">
-                                    <label class="text-black mb-1 font-bold text-sm 2xl:text-base">Grado</label>
+                                    <label class="text-black mb-1 font-bold text-sm">Grado</label>
                                 </div>
                                 <div class="flex w-1/6">
-                                    <label class="text-black mb-1 font-bold text-sm 2xl:text-base">Título</label>
+                                    <label class="text-black mb-1 font-bold text-sm">Título</label>
                                 </div>
                                 <div class="flex w-1/6">
-                                    <label class="text-black mb-1 w-max font-bold text-sm 2xl:text-base">Fecha de ingreso</label>
+                                    <label class="text-black mb-1 w-max font-bold text-sm">Fecha de ingreso</label>
                                 </div>
                                 <div class="flex w-1/6">
-                                    <label class="text-black mb-1 w-max font-bold text-sm 2xl:text-base">Fecha de salida</label>
+                                    <label class="text-black mb-1 w-max font-bold text-sm">Fecha de salida</label>
                                 </div>
                                 <div class="flex w-1/6">
-                                    <label class="text-black mb-1 font-bold text-sm 2xl:text-base">Estado</label>
+                                    <label class="text-black mb-1 font-bold text-sm">Estado</label>
                                 </div>
                             </div>
                             <div class="flex flex-no-wrap items-center py-1">
@@ -349,19 +349,38 @@
                                 <div class="bg-gray-500 flex-grow h-px"></div>
                             </div>
                             <div class="flex w-fit gap-1">
-                                <div class="flex w-1/6">
-                                    <p class="text-black text-sm 2xl:text-base w-max">Liceo de Costa Rica</p>
+                                <div class="flex w-full">
+                                    <p class="text-black text-sm w-max">Liceo de Costa Rica</p>
                                 </div>
-                                <div class="flex w-1/6 gap-1">
-                                    <p class="block text-black text-sm 2xl:text-base">Bachiller</p>
+                                <div class="flex w-full gap-1">
+                                    <p class="block text-black text-sm">Bachiller</p>
                                     <div class="flex w-full">
-                                        <button type="button" class="text-sm 2xl:text-base btn-open-popup bg-blue-600 py-0 px-3 text-white font-medium rounded-md hover:bg-blue-700" onclick="togglePopuptm()">Ver</button>
+                                        <button type="button" class="btn-open-popup bg-blue-600 text-white font-medium rounded-md hover:bg-blue-700" onclick="togglePopuptm()">Ver</button>
                                         <div id="popupOverlaytm" class="overlay-container">
-                                            <div class="popup-box-title">
+                                            <div class="popup-box">
                                                 <h2 class="font-bold mb-2" style="color: green; font-size: 20px;">Título</h2>
                                                 <form class="form-container" id="form_institucion">
+                                                    <div class=" mb-5 gap-2">
+                                                        <label class="font-bold form-label">Título:</label>
+                                                        <p>Bachillerato en educación media</p>
+                                                    </div>
+                                                    <div class="flex justify-center gap-10 mb-5">
+                                                        <div>
+                                                            <label class="font-bold form-label">Tomo:</label>
+                                                            <p>12</p>
+                                                        </div>
+                                                        <div>
+                                                            <label class="font-bold form-label">Folio:</label>
+                                                            <p>478</p>
+                                                        </div>
+                                                        <div>
+                                                            <label class="font-bold form-label">Asiento:</label>
+                                                            <p>152</p>
+                                                        </div>
+                                                    </div>
                                                     <div class="mb-5">
-                                                        <img src="../../Assets/Titulo.JPG"/>
+                                                        <label class="font-bold form-label">Fecha de emisión:</label>
+                                                        <p>15/12/2013</p>
                                                     </div>
                                                     <button class="btn-close-popup w-1/2 h-1/2 mt-0 self-center" onclick="togglePopuptm()" type="button">Cerrar</button>
                                                 </form>
@@ -371,26 +390,25 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="flex w-1/6">
-                                    <p class="w-max text-black text-sm 2xl:text-base">Educación media</p>
+                                <div class="flex w-full">
+                                    <p class="w-max text-black text-sm">Educación media</p>
                                 </div>
-                                <div class="flex w-1/6">
-                                    <p class="block text-black text-sm 2xl:text-base">02/2009</p>
+                                <div class="flex w-full">
+                                    <p class="block text-black text-sm">02/2009</p>
                                 </div>
-                                <div class="flex w-1/6">
-                                    <p class="block text-black text-sm 2xl:text-base">12/2013</p>
+                                <div class="flex w-full">
+                                    <p class="block text-black text-sm">12/2013</p>
                                 </div>
-                                <div class="flex w-1/6">
-                                    <p class="block text-black text-sm 2xl:text-base">Verificado</p>
+                                <div class="flex w-full"><span class="block text-black text-sm"></span>Verificado
                                 </div>
                             </div>
                         </div>
                         <div class="flex  gap-1">
                             <div class="flex justify-end w-1/2 mr-1">
-                                <a href="Expediente%20general.html"> <button type="button" class="text-sm 2xl:text-base bg-blue-700 text-white font-medium px-6 py-2 rounded-md hover:bg-blue-500">Guardar</button> </a>
+                                <a href="Expediente%20general.html"> <button type="button" class="bg-blue-700 text-white font-medium px-6 py-2 rounded-md hover:bg-blue-500">Guardar</button> </a>
                             </div>
                             <div class="w-1/2 ml-1">
-                                <a href="Expediente%20general.html"> <button type="button" class="text-sm 2xl:text-base bg-blue-700 text-white font-medium px-6 py-2 rounded-md hover:bg-blue-500 ">Atras</button> </a> 
+                                <a href="Expediente%20general.html"> <button type="button" class="bg-blue-700 text-white font-medium px-6 py-2 rounded-md hover:bg-blue-500 ">Atras</button> </a> 
                             </div>
                         </div>
                     </form>

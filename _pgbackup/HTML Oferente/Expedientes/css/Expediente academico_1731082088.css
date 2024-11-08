@@ -49,18 +49,6 @@ body {
     animation: fadeInUp 0.5s ease-out forwards;
 }
 
-.popup-box-title {
-    background: #fff;
-    padding: 24px;
-    border-radius: 12px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-    width: 640px;
-    text-align: center;
-    opacity: 0;
-    transform: scale(0.8);
-    animation: fadeInUp 0.5s ease-out forwards;
-}
-
 .popup-box2 {
     background: #fff;
     padding: 24px;
