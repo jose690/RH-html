@@ -69,18 +69,18 @@
                         </div>
                         <div class="p-1">
                             <div id="popupOverlayaddtittle" class="overlay-container">
-                                <div class="popup-box2 md:w-full md:mx-5 rounded-lg border-2 border-solid border-gray-300 mb-1 px-5 py-2 bg-green-200">
-                                    <h2 class="text-3xl font-medium text-black mb-5 text-left">
+                                <div class="popup-box2 w-max rounded-lg border-2 border-solid border-gray-300 mb-1 p-0 bg-green-200">
+                                    <h2 class="text-2xl font-medium text-black mb- text-left">
                         Agregar </h2>
                                     <form>
-                                        <div class="flex flex-wrap mx-2 mb-5">
-                                            <div class="w-1/3 px-2">
-                                                <div class="flex w-full mb-1">
-                                                    <div class="flex w-1/4">
+                                        <div class="flex flex-col">
+                                            <div class="w-fit flex gap-1 mb-1">
+                                                <div class="flex w-44 gap-1">
+                                                    <div class="flex w-fit">
                                                         <label class="block text-black font-bold">Institución:</label>
                                                     </div>
-                                                    <div class="flex w-3/4 px-2 mb-4 md:mb-0">
-                                                        <button type="button" class="btn-open-popup w-1/2 bg-blue-700 text-white font-medium px-6 py-1 rounded-md hover:bg-blue-500" onclick="togglePopup()">Buscar
+                                                    <div class="flex w-fit">
+                                                        <button type="button" class="w-20 h-8 btn-open-popup bg-blue-700 text-white p-0 font-medium rounded-md hover:bg-blue-500" onclick="togglePopup()">Buscar
 </button>
                                                         <div id="popupOverlay" class="overlay-container">
                                                             <div class="popup-box">
@@ -178,16 +178,12 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="flex w-full px-2 my-4"><span class=" font-bold text-xl text-black" id="texto_institucion"></span>
-                                                </div>
-                                            </div>
-                                            <div class="w-1/3 py-2">
-                                                <div class="flex mb-5">
+                                                <div class="flex w-fit gap-1">
                                                     <div class="flex w-2/5">
-                                                        <label class="block text-black font-bold">Título:</label>
+                                                        <label class="text-black font-bold">Título:</label>
                                                     </div>
-                                                    <div class="flex w-2/5 px-2">
-                                                        <button type="button" class="btn-open-popup bg-blue-700 text-white py-1 font-medium rounded-md hover:bg-blue-500" onclick="togglePopupt()">
+                                                    <div class="flex w-fit px-0">
+                                                        <button type="button" class="w-20 h-8 btn-open-popup bg-blue-700 text-white p-1 font-medium rounded-md hover:bg-blue-500" onclick="togglePopupt()">
                                                             Agregar
 </button>
                                                         <div id="popupOverlayt" class="overlay-container">
@@ -232,16 +228,29 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="flex w-1/4 mb-2 mt-2">
-                                                        <input type="checkbox" id="check_titulo" class="w-7"/>
+                                                    <div class="flex w-1/5 mb-4">
+                                                        <input type="checkbox" id="check_titulo" class="w-5"/>
                                                     </div>
                                                 </div>
-                                                <div class="flex">
-                                                    <div class="flex w-2/5">
-                                                        <label class="text-black font-bold">Fecha de ingreso:</label>
+                                                <div class="flex w-2/4 gap-1">
+                                                    <div class="flex w-fit">
+                                                        <label class="w-max text-black font-bold">Campo de estudio:</label>
+                                                    </div>
+                                                    <div class="flex">
+                                                        <input type="text" class="border text-xs border-gray-300 px-3 py-2 rounded-md" placeholder="Educación, administración"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" flex w-fix">
+                                                <div class="flex w-44">
+                                                    <span class="font-bold text-xl text-black" id="texto_institucion">a</span>
+                                                </div>
+                                                <div class="flex w-2/5 gap-1">
+                                                    <div class="flex w-fit">
+                                                        <label class="w-max text-black font-bold">Fecha de ingreso:</label>
                                                     </div>
                                                     <div class="flex w-3/5 gap-1">
-                                                        <select class="block w-1/2 border border-gray-300 px-3 py-1 rounded-md">
+                                                        <select class="w-1/2 border text-xs border-gray-300 rounded-md">
                                                             <option>Enero</option>
                                                             <option>Febrero</option>
                                                             <option>Marzo</option>
@@ -255,7 +264,7 @@
                                                             <option>Noviembre</option>
                                                             <option>Diciembre</option>
                                                         </select>
-                                                        <select class="block w-1/2 border border-gray-300 px-3 py-1 rounded-md">
+                                                        <select class="block w-fit text-xs border border-gray-300 rounded-md">
                                                             <option>2024</option>
                                                             <option>2023</option>
                                                             <option>2022</option>
@@ -270,22 +279,12 @@
                                                         </select>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="w-1/3 py-2 px-2">
-                                                <div class="flex mb-4">
+                                                <div class="flex">
                                                     <div class="flex w-2/5">
-                                                        <label class="block text-black font-bold">Campo de estudio:</label>
-                                                    </div>
-                                                    <div class="flex w-3/5">
-                                                        <input type="text" class="block w-full border border-gray-300 px-3 py-2 rounded-md" placeholder="Educación, administración"/>
-                                                    </div>
-                                                </div>
-                                                <div class="flex mb-2">
-                                                    <div class="flex w-2/5">
-                                                        <label class="block text-black font-bold">Fecha de salida:</label>
+                                                        <label class="w-max text-black font-bold">Fecha de salida:</label>
                                                     </div>
                                                     <div class="flex w-3/5 gap-1">
-                                                        <select class="block w-1/2 border border-gray-300 px-3 py-1 rounded-md">
+                                                        <select class="w-1/2 border text-xs border-gray-300 rounded-md">
                                                             <option>Enero</option>
                                                             <option>Febrero</option>
                                                             <option>Marzo</option>
@@ -299,7 +298,7 @@
                                                             <option>Noviembre</option>
                                                             <option>Diciembre</option>
                                                         </select>
-                                                        <select class="block w-1/2 border border-gray-300 px-3 py-1 rounded-md">
+                                                        <select class="block w-1/2 text-xs border border-gray-300 rounded-md">
                                                             <option>2024</option>
                                                             <option>2023</option>
                                                             <option>2022</option>
