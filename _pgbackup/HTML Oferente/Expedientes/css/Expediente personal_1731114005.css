@@ -31,7 +31,7 @@
 
 .tituloNombre,
 .tituloApellidos,
-.tituloLicencia {
+.TituloLicencia {
     width: 90px;
 }
 
@@ -157,52 +157,12 @@
     opacity: 1;
 }
 
-/* menu superior */
-.buttonsup {
-    display: inline-block;
-    height: 50px;
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.5s ease-in;
-    z-index: 1;
-}
+@layer utilities {
+    @media (max-width: 1280px) and (max-height: 720px) {
+        .text-sm-1280 {
+            font-size: 0.875rem;
 
-.buttonsup::before,
-.buttonsup::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    width: 0;
-    height: 100%;
-    transform: skew(15deg);
-    transition: all 0.5s;
-    overflow: hidden;
-    z-index: -1;
-}
-
-.buttonsup::before {
-    left: -10px;
-    background: #240046;
-}
-
-.buttonsup::after {
-    right: -10px;
-    background: #5a189a;
-}
-
-.buttonsup:hover::before,
-.buttonsup:hover::after {
-    width: 58%;
-}
-
-.buttonsup:hover span {
-    color: #e0aaff;
-    transition: 0.3s;
-}
-
-.buttonsup span {
-    color: #03045e;
-    font-size: 18px;
-    transition: all 0.3s ease-in;
+            /* Ejemplo de ajuste para 1280x720 */
+        }
+    }
 }

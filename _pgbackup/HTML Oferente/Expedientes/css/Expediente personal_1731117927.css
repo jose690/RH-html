@@ -160,8 +160,10 @@
 /* menu superior */
 .buttonsup {
     display: inline-block;
+    width: 150px;
     height: 50px;
     border-radius: 10px;
+    border: 1px solid #03045e;
     position: relative;
     overflow: hidden;
     transition: all 0.5s ease-in;

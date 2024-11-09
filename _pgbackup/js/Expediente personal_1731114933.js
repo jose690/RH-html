@@ -57,21 +57,3 @@ function handleButtonClickn(event) {
 }
 
 document.getElementById("btn-submitn").addEventListener("click",handleButtonClickn);
-
-//colegiado
-function togglePopupc(){
-    const overlay = document.getElementById("popupOverlayc");
-    overlay.classList.toggle("show");
-
-    if (overlay.classList.contains("show")) {
-        const btnSubmit = document.getElementById("btn-submitc");
-        btnSubmit.addEventListener("click", handleButtonClickc);
-    }
-}
-
-function handleButtonClickc(event) {
-    event.preventDefault();
-    togglePopupc();
-}
-
-document.getElementById("btn-submitc").addEventListener("click",handleButtonClickc);
